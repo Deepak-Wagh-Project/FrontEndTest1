@@ -28,13 +28,9 @@ let arr = [
   
   function removeAdmin() {
     //Write your code here, just console.log
-    for(let element of arr){
-        if(element.profession=="admin"){
-            arr.pop(element);
-        }
-
-    }
-    console.log(arr);
+   
+    let filterArray= arr.filter((arr)=>arr.profession!=="admin")
+    console.log(filterArray);
   }
   
   function concatenateArray() {
